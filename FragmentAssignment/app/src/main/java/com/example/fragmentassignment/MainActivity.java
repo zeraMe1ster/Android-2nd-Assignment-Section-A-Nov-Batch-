@@ -94,6 +94,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonAutomorphic = findViewById(R.id.btnAuto);
+        buttonAutomorphic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                if (status) {
+                    AutomorphicFragment automorphicFragment = new AutomorphicFragment();
+                    fragmentTransaction.replace(R.id.layoutContainer, automorphicFragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                } else {
+
+                }
+            }
+        });
+
+        buttonReverseString = findViewById(R.id.btnRevStr);
+        buttonReverseString.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                if (status) {
+                    ReverseStringFragment reverseStringFragment = new ReverseStringFragment();
+                    fragmentTransaction.replace(R.id.layoutContainer, reverseStringFragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                } else {
+
+                }
+            }
+        });
+
 
 
 

@@ -18,7 +18,7 @@ import android.widget.Toast;
  */
 public class CircleFragment extends Fragment {
 
-
+    View view;
     Button buttoncircle;
     EditText etFirst;
 

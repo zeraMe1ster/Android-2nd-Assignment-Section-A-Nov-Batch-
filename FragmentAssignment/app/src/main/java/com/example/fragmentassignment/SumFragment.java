@@ -18,6 +18,7 @@ import android.widget.Toast;
  */
 public class SumFragment extends Fragment {
 
+    View view;
     EditText editTextFirst, editTextSecond;
     Button buttonSum;
 

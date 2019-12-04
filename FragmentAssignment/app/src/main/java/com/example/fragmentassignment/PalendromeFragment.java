@@ -21,6 +21,7 @@ import java.util.HashMap;
  */
 public class PalendromeFragment extends Fragment {
 
+    View view;
     EditText editTextPalen;
     Button buttonPalen;
     HashMap<Character, Integer> charCountMap;

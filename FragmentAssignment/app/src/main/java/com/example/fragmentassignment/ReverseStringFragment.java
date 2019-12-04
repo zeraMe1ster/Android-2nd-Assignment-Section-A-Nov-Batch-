@@ -19,7 +19,7 @@ import java.util.HashMap;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ReverseFragment extends Fragment {
+public class ReverseStringFragment extends Fragment {
 
     View view;
     EditText etReverse;
@@ -28,7 +28,7 @@ public class ReverseFragment extends Fragment {
     TextView textViewReverse;
 
 
-    public ReverseFragment() {
+    public ReverseStringFragment() {
         // Required empty public constructor
     }
 
@@ -37,7 +37,7 @@ public class ReverseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_reverse, container, false);
+        View view = inflater.inflate(R.layout.fragment_reverse_string, container, false);
         etReverse = view.findViewById(R.id.editReverse);
         buttonReverse = view.findViewById(R.id.btnReverse);
         textViewReverse = view.findViewById(R.id.textReverse);
