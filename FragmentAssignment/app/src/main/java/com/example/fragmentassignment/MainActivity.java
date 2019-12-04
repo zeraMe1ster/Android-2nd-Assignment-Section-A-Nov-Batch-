@@ -59,5 +59,45 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        buttonReverse = findViewById(R.id.btnReverse);
+        buttonReverse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                if (status) {
+                    ReverseFragment reverseFragment = new ReverseFragment();
+                    fragmentTransaction.replace(R.id.layoutContainer, reverseFragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                } else {
+                }
+            }
+        });
+
+        buttonPalendrome = findViewById(R.id.btnPalendrome);
+        buttonPalendrome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                if (status) {
+                    PalendromeFragment palendromeFragment = new PalendromeFragment();
+                    fragmentTransaction.replace(R.id.layoutContainer, palendromeFragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                } else {
+                }
+            }
+        });
+
+
+
+
+
+
     }
 }
